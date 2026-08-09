@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Luxe Grind — The Foundation Collection</title>
+  <meta name="description" content="Luxe Grind — More Than Clothing. It's a Mindset. Built on Discipline. Designed for Success.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="shipping-bar">FREE SHIPPING ON ORDERS OVER TT$1,700 / US$250</div>
+
+  <header class="header">
+    <button class="menu-btn" aria-label="Open menu">☰</button>
+    <a class="brand" href="#home" aria-label="Luxe Grind home">
+      <span class="crown">♛</span>
+      <span class="brand-name">LUXE GRIND</span>
+      <span class="tagline">BUILT ON DISCIPLINE. DESIGNED FOR SUCCESS.</span>
+    </a>
+    <nav class="desktop-nav">
+      <a href="#shop">SHOP</a>
+      <a href="#collections">COLLECTIONS</a>
+      <a href="#story">ABOUT US</a>
+      <a href="#contact">CONTACT</a>
+    </nav>
+    <div class="header-actions">
+      <button id="searchBtn" aria-label="Search">⌕</button>
+      <button id="cartBtn" aria-label="Shopping cart">🛒 <b id="cartCount">0</b></button>
+    </div>
+  </header>
+
+  <main id="home">
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">THE FOUNDATION COLLECTION</p>
+        <h1>WEAR<br><em>THE MINDSET.</em></h1>
+        <p class="hero-text">Built on Discipline.<br>Designed for Success.</p>
+        <a class="gold-btn" href="#shop">SHOP COLLECTION <span>→</span></a>
+      </div>
+      <div class="hero-art">
+        <div class="model-card model-black">
+          <div class="silhouette"></div><span>LUXE GRIND</span>
+        </div>
+        <div class="model-card model-cream">
+          <div class="silhouette"></div><span>LUXE GRIND</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="values">
+      <div><strong>◇</strong><span><b>PREMIUM QUALITY</b>Crafted to stand out.</span></div>
+      <div><strong>♧</strong><span><b>TIMELESS DESIGN</b>Style that lasts.</span></div>
+      <div><strong>♛</strong><span><b>LIMITED RELEASES</b>Exclusivity matters.</span></div>
+      <div><strong>◎</strong><span><b>MADE FOR GO-GETTERS</b>Built for the grind.</span></div>
+    </section>
+
+    <section class="collections" id="collections">
+      <div class="section-head"><p>EXPLORE</p><h2>SHOP BY COLLECTION</h2></div>
+      <div class="collection-grid">
+        <a href="#shop" class="collection-card"><div class="art tee-art"></div><span>ESSENTIALS</span><small>SHOP NOW →</small></a>
+        <a href="#shop" class="collection-card"><div class="art hoodie-art"></div><span>HOODIES</span><small>SHOP NOW →</small></a>
+        <a href="#shop" class="collection-card"><div class="art track-art"></div><span>TRACKSUITS</span><small>SHOP NOW →</small></a>
+        <a href="#shop" class="collection-card"><div class="art cap-art"></div><span>HEADWEAR</span><small>SHOP NOW →</small></a>
+        <a href="#shop" class="collection-card"><div class="art bag-art"></div><span>ACCESSORIES</span><small>SHOP NOW →</small></a>
+      </div>
+    </section>
+
+    <section class="shop" id="shop">
+      <div class="section-head row">
+        <div><p>THE FOUNDATION COLLECTION</p><h2>FEATURED PRODUCTS</h2></div>
+        <button class="outline-btn" id="sortBtn">SORT: FEATURED ↕</button>
+      </div>
+      <div class="shop-toolbar">
+        <button class="filter active" data-filter="all">ALL</button>
+        <button class="filter" data-filter="tees">TEES</button>
+        <button class="filter" data-filter="hoodies">HOODIES</button>
+        <button class="filter" data-filter="tracksuits">TRACKSUITS</button>
+        <button class="filter" data-filter="accessories">ACCESSORIES</button>
+      </div>
+      <div class="products" id="products"></div>
+    </section>
+
+    <section class="story" id="story">
+      <div class="story-art"><div class="story-logo">LG</div></div>
+      <div class="story-copy">
+        <p class="eyebrow">MORE THAN CLOTHING.</p>
+        <h2>IT'S A<br><em>MINDSET.</em></h2>
+        <p>Luxe Grind was created for people who refuse to settle. Every piece represents discipline, consistency, confidence and the belief that success is earned — not given.</p>
+        <p class="quote">“Every goal starts with one decision: keep going.”</p>
+        <a class="gold-btn" href="#contact">OUR STORY →</a>
+      </div>
+    </section>
+
+    <section class="movement">
+      <p class="eyebrow">JOIN THE MOVEMENT</p>
+      <h2>THE GRIND DOESN'T STOP.</h2>
+      <p>Be first to know about new drops, limited releases and exclusive offers.</p>
+      <form id="newsletter">
+        <input type="email" placeholder="Enter your email address" required>
+        <button class="gold-btn" type="submit">SUBSCRIBE</button>
+      </form>
+      <small id="newsletterMsg"></small>
+    </section>
+  </main>
+
+  <footer id="contact">
+    <div class="footer-brand">
+      <span class="crown">♛</span><h2>LUXE GRIND</h2>
+      <p>BUILT ON DISCIPLINE.<br>DESIGNED FOR SUCCESS.</p>
+      <p class="earned">EARNED. NEVER GIVEN.</p>
+    </div>
+    <div><h4>SHOP</h4><a href="#shop">All Products</a><a href="#shop">New Arrivals</a><a href="#shop">Essentials</a><a href="#shop">Hoodies</a></div>
+    <div><h4>CUSTOMER CARE</h4><a href="#">Shipping Information</a><a href="#">Returns & Exchanges</a><a href="#">Size Guide</a><a href="#">FAQ</a></div>
+    <div><h4>CONTACT</h4><a href="https://wa.me/18683469138" target="_blank">WhatsApp: +1 (868) 346-9138</a><a href="mailto:hello@luxegrind.co">hello@luxegrind.co</a><p class="muted">Business email can be replaced when you create it.</p></div>
+    <div class="footer-bottom">© 2026 LUXE GRIND. ALL RIGHTS RESERVED. <span>TTD / USD</span></div>
+  </footer>
+
+  <div class="drawer" id="drawer">
+    <div class="drawer-panel">
+      <button class="close" id="closeCart">×</button>
+      <p class="eyebrow">YOUR BAG</p><h2>SHOPPING CART</h2>
+      <div id="cartItems"></div>
+      <div class="cart-total"><span>TOTAL</span><strong id="cartTotal">TT$0.00</strong></div>
+      <button class="gold-btn full" id="whatsappCheckout">ORDER VIA WHATSAPP →</button>
+      <p class="cart-note">You'll confirm size, color, delivery and payment with Luxe Grind on WhatsApp.</p>
+    </div>
+  </div>
+
+  <div class="search-overlay" id="searchOverlay">
+    <button class="close" id="closeSearch">×</button>
+    <input id="searchInput" placeholder="SEARCH LUXE GRIND..." autofocus>
+    <p>Type a product name to filter the collection.</p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
