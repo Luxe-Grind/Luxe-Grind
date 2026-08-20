@@ -1,19 +1,67 @@
 const products = [
- {id:1,name:"Luxe Logo Tee",cat:"tees",price:170,usd:25,style:"black"},
- {id:2,name:"Heavyweight Oversized Tee",cat:"tees",price:200,usd:30,style:"cream"},
- {id:3,name:"Essential Hoodie",cat:"hoodies",price:340,usd:50,style:"black"},
- {id:4,name:"Signature Tracksuit",cat:"tracksuits",price:680,usd:100,style:"gold"},
- {id:5,name:"Premium Cap",cat:"accessories",price:120,usd:18,style:"black"},
- {id:6,name:"Crossbody Bag",cat:"accessories",price:180,usd:27,style:"black"}
+  {
+    id: 1,
+    name: "Luxe Logo Tee",
+    cat: "tees",
+    price: 170,
+    usd: 25,
+    style: "black",
+    image: "images/luxe-logo-tee.jpg"
+  },
+  {
+    id: 2,
+    name: "Heavyweight Oversized Tee",
+    cat: "tees",
+    price: 200,
+    usd: 30,
+    style: "cream",
+    image: "images/heavyweight-tee.jpg"
+  },
+  {
+    id: 3,
+    name: "Essential Hoodie",
+    cat: "hoodies",
+    price: 340,
+    usd: 50,
+    style: "black",
+    image: "images/essential-hoodie.jpg"
+  },
+  {
+    id: 4,
+    name: "Signature Tracksuit",
+    cat: "tracksuits",
+    price: 680,
+    usd: 100,
+    style: "gold",
+    image: "images/signature-tracksuit.jpg"
+  },
+  {
+    id: 5,
+    name: "Premium Cap",
+    cat: "accessories",
+    price: 120,
+    usd: 18,
+    style: "black",
+    image: "images/premium-cap.jpg"
+  },
+  {
+    id: 6,
+    name: "Crossbody Bag",
+    cat: "accessories",
+    price: 180,
+    usd: 27,
+    style: "black",
+    image: "images/crossbody-bag.jpg"
+  }
 ];
-let cart = JSON.parse(localStorage.getItem("luxeGrindCart") || "[]");
-let currentFilter = "all";
-const productsEl = document.getElementById("products");
 
 function renderProducts(list=products){
   productsEl.innerHTML = list.filter(p=>currentFilter==="all"||p.cat===currentFilter).map(p=>`
     <article class="product ${p.style}">
-      <div class="product-img"><span class="badge">NEW</span></div>
+      <div class="product-img">
+  <img src="${p.image}" alt="${p.name}" loading="lazy">
+  <span class="badge">NEW</span>
+</div>
       <div class="product-info">
         <h3>${p.name}</h3>
         <div class="price">TT$${p.price.toFixed(2)} <span>US$${p.usd.toFixed(2)}</span></div>
