@@ -214,3 +214,29 @@
     padding:45px 20px;
   }
 }
+@media(max-width:900px){
+  .desktop-nav.mobile-open{
+    display:flex;
+    position:absolute;
+    top:82px;
+    left:0;
+    right:0;
+    background:#090909;
+    flex-direction:column;
+    gap:0;
+    margin:0;
+    padding:15px 20px 20px;
+    border-top:1px solid #292929;
+    box-shadow:0 10px 25px rgba(0,0,0,.35);
+  }
+
+  .desktop-nav.mobile-open a{
+    padding:16px 5px;
+    border-bottom:1px solid #292929;
+    font-size:10px;
+  }
+
+  .desktop-nav.mobile-open a:last-child{
+    border-bottom:0;
+  }
+}
