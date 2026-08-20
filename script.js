@@ -65,3 +65,37 @@ document.getElementById("newsletter").addEventListener("submit",e=>{
 });
 document.querySelectorAll(".drawer,.search-overlay").forEach(x=>x.addEventListener("click",e=>{if(e.target===x)x.classList.remove("open")}));
 renderProducts();renderCart();updateCount();
+// MOBILE MENU
+const menuBtn = document.querySelector(".menu-btn");
+
+if (menuBtn) {
+  menuBtn.addEventListener("click", () => {
+    document.querySelector(".desktop-nav").classList.toggle("mobile-open");
+  });
+}
+
+// Close mobile menu when a navigation link is selected
+document.querySelectorAll(".desktop-nav a").forEach(link => {
+  link.addEventListener("click", () => {
+    document.querySelector(".desktop-nav").classList.remove("mobile-open");
+  });
+});
+
+// SORT PRODUCTS
+document.getElementById("sortBtn").addEventListener("click", () => {
+  const button = document.getElementById("sortBtn");
+
+  if (button.dataset.sort === "low") {
+    button.dataset.sort = "high";
+    button.textContent = "SORT: PRICE HIGH ↕";
+
+    const sorted = [...products].sort((a,b) => b.price - a.price);
+    renderProducts(sorted);
+  } else {
+    button.dataset.sort = "low";
+    button.textContent = "SORT: PRICE LOW ↕";
+
+    const sorted = [...products].sort((a,b) => a.price - b.price);
+    renderProducts(sorted);
+  }
+});
