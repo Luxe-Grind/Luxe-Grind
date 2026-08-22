@@ -15,7 +15,7 @@ const products = [
     price: 200,
     usd: 30,
     style: "cream",
-    image: "images/heavyweight-tee.jpg"
+    image: "images/08-luxe-grind-embroidered-tee-black.png"
   },
   {
     id: 3,
