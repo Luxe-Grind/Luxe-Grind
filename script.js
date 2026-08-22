@@ -24,7 +24,7 @@ const products = [
     price: 340,
     usd: 50,
     style: "black",
-    image: "images/essential-hoodie.jpg"
+    image: "images/01-luxe-grind-signature-hoodie-black.png"
   },
   {
     id: 4,
