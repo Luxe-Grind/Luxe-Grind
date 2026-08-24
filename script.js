@@ -33,7 +33,7 @@ const products = [
     price: 680,
     usd: 100,
     style: "gold",
-    image: "images/signature-tracksuit.jpg"
+    image: "images/luxe-grind-performance-tracksuit.png"
   },
   {
     id: 5,
@@ -51,7 +51,7 @@ const products = [
     price: 180,
     usd: 27,
     style: "black",
-    image: "images/crossbody-bag.jpg"
+    image: "images/luxe-grind-crossbody-bag.png"
   }
 ];
 
