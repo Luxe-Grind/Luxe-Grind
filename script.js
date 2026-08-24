@@ -42,8 +42,8 @@ const products = [
     price: 120,
     usd: 18,
     style: "black",
-    image: "images/premium-cap.jpg"
-  },
+    ima
+  },image: "images/10-luxe-grind-essential-cap-multi.png"
   {
     id: 6,
     name: "Crossbody Bag",
