@@ -164,3 +164,4 @@ document.getElementById("sortBtn").addEventListener("click", () => {
     renderProducts(sorted);
   }
 });
+renderProducts();
