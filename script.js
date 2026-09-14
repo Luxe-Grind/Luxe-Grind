@@ -55,20 +55,34 @@ const products = [
   }
 ];
 
-function renderProducts(list=products){
-  productsEl.innerHTML = list.filter(p=>currentFilter==="all"||p.cat===currentFilter).map(p=>`
+function renderProducts(list = products) {
+  const filtered = list.filter(p =>
+    currentFilter === "all" || p.cat === currentFilter
+  );
+
+  productsEl.innerHTML = filtered.map(p => `
     <article class="product ${p.style}">
       <div class="product-img">
-  <img src="${p.image}" alt="${p.name}" loading="lazy">
-  <span class="badge">NEW</span>
-</div>
+        <img src="${p.image}" alt="${p.name}">
+        <span class="badge">NEW</span>
+      </div>
+
       <div class="product-info">
         <h3>${p.name}</h3>
-        <div class="price">TT$${p.price.toFixed(2)} <span>US$${p.usd.toFixed(2)}</span></div>
-        <button class="add" onclick="addToCart(${p.id})">ADD TO BAG</button>
+
+        <div class="price">
+          TT$${p.price.toFixed(2)}
+          <span>US$${p.usd.toFixed(2)}</span>
+        </div>
+
+        <button class="add" onclick="addToCart(${p.id})">
+          ADD TO BAG
+        </button>
       </div>
-    </article>`).join("");
+    </article>
+  `).join("");
 }
+
 function save(){localStorage.setItem("luxeGrindCart",JSON.stringify(cart));}
 function addToCart(id){
   const found=cart.find(x=>x.id===id);
