@@ -9,7 +9,7 @@ const products = [
     price: 170,
     usd: 25,
     style: "black",
-    image: "./images/05-luxe-grind-signature-tee-black.png"
+    image: "Images/05-luxe-grind-signature-tee-black.png"
   },
   {
     id: 2,
