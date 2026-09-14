@@ -1,3 +1,6 @@
+const productsEl = document.getElementById("products");
+let currentFilter = "all";
+
 const products = [
   {
     id: 1,
