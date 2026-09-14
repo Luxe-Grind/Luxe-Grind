@@ -18,7 +18,7 @@ const products = [
     price: 200,
     usd: 30,
     style: "cream",
-    image: "images/07-luxe-grind-legacy-tee-beige-back.png"
+    image: "Images/07-luxe-grind-legacy-tee-beige-back.png"
   },
   {
     id: 3,
@@ -27,7 +27,7 @@ const products = [
     price: 340,
     usd: 50,
     style: "black",
-    image: "images/01-luxe-grind-signature-hoodie-black.png"
+    image: "Images/01-luxe-grind-signature-hoodie-black.png"
   },
   {
     id: 4,
@@ -36,7 +36,7 @@ const products = [
     price: 680,
     usd: 100,
     style: "gold",
-    image: "images/luxe-grind-performance-tracksuit.png"
+    image: "Images/luxe-grind-performance-tracksuit.png"
   },
   {
     id: 5,
@@ -45,7 +45,7 @@ const products = [
     price: 120,
     usd: 18,
     style: "black",
-    image: "images/10-luxe-grind-essential-cap-multi.png"
+    image: "Images/10-luxe-grind-essential-cap-multi.png"
   },
   {
     id: 6,
@@ -54,7 +54,7 @@ const products = [
     price: 180,
     usd: 27,
     style: "black",
-    image: "images/luxe-grind-crossbody-bag.png"
+    image: "Images/luxe-grind-crossbody-bag.png"
   }
 ];
 
